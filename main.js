@@ -38,4 +38,16 @@ function calculaTempo(tempoObjetivo) {
     return(dias + " dias " + horas + " horas " + minutos + " minutos " + segundos + " segundos ");
 
 }
-contadores[0].textContent = calculaTempo(tempoObjetivo1);
+
+function atualizaCronometro(){
+    for (let i=0; i < contadores. length; i++){
+        contador[i].textContent = calculaTempo(tempos[i]);
+    } 
+}
+
+function comecaCronometro(){
+    atualizaCronometro();
+    setInterval(atualizaCronometro, 1000);
+}
+
+comecaCronometro();
