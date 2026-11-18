@@ -40,7 +40,7 @@ function calculaTempo(tempoObjetivo) {
 }
 
 function atualizaCronometro(){
-    for (let i=0; i < contadores. length; i++){
+    for (let i=0; i < contadores.length; i++){
         contador[i].textContent = calculaTempo(tempos[i]);
     } 
 }
